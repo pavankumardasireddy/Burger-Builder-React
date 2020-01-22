@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Open sans",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,4 +9,140 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Burger {
+  width: 100%;
+    margin: auto;
+    height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 1000px) and (min-height: 700px) {
+  .Burger {
+      width: 700px;
+      height: 600px;
+  }
+}
+
+@media (min-width: 500px) and (min-height: 401px) {
+  .Burger {
+      width: 450px;
+      height: 400px;
+  }
+}
+
+@media (min-width: 500px) and (min-height: 400px) {
+  .Burger {
+      width: 350px;
+      height: 300px;
+  }
+}
+
+.BreadBottom {
+  border: 30px solid red;
+  border-radius: 15%;
+  margin: 3px;
+}
+.BreadTop {
+  border: 20px solid rgb(228, 144, 9);
+  border-radius: 15%;
+  margin: 3px;
+}
+.Seed1 {
+  border: 1px solid orange;
+}
+.Seed2 {
+  border: 1px solid orangered;
+}
+.Meat {
+  border: 15px solid rebeccapurple;
+  margin: 3px;
+  border-radius: 15%;
+}
+.Cheese {
+  border: 10px solid #dedea3;
+  margin: 3px;
+  border-radius: 15%;
+}
+.Bacon {
+  border: 10px solid brown;
+  margin: 3px;
+  border-radius: 15%;
+}
+.Salad {
+  border: 10px solid rgb(6, 139, 46);
+  margin: 3px;
+  border-radius: 15%;
+}
+
+.Content {
+  margin-top: 16px; 
+}
+
+.BuildControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.BuildControl button {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  width: 80px;
+  border: 1px solid #AA6817;
+  cursor: pointer;
+  outline: none;
+}
+
+.BuildControl button:disabled {
+  background-color: #AC9980;
+  border: 1px solid #7E7365;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.BuildControl .More {
+  background-color: #BF5E1E;
+  color: white;
+}
+
+.BuildControl .Less:hover, .BuildControl .Less:active {
+  background-color: #DAA972;
+  color: white;
+}
+
+.BuildControl .More:hover, .BuildControl .More:active {
+  background-color: #99703F;
+  color: white;
+}
+
+.Label {
+  padding: 10px;
+  font-weight : bold;
+  width: 80px;
+}
+
+.BuildControl .Less {
+  background-color: #D39952;
+  color: white;
+}
+
+.BuildControls {
+  width: 100%;
+  background-color: lightslategray;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-shadow: 0 2px 1px #ccc;
+  margin:auto;
+  padding: 10px 0;
 }
